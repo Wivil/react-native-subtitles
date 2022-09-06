@@ -67,18 +67,7 @@ const Subtitles = ({
         });
 
         // NOTE: sort by start timing
-
         sortByKey(result, 'start', true);
-
-        // result.sort((a, b) => {
-        // if (a.start > b.start) {
-        //     return 1;
-        // }
-        // if (a.start < b.start) {
-        //     return 1;
-        // }
-        // return 0;
-        // });
 
         setSubtitles(result);
       } else if (subtitleType === 'vtt') {
@@ -103,18 +92,6 @@ const Subtitles = ({
 
           // NOTE: sort by start timing
           sortByKey(result, 'start', true);
-
-          //
-          // result.sort((a, b) => {
-          // if (a.start > b.start) {
-          //     return 1;
-          // }
-          // if (a.start < b.start) {
-          //     return 1;
-          // }
-          // return 0;
-          // });
-          //
 
           setSubtitles(result);
         });
